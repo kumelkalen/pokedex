@@ -15,8 +15,13 @@ $(document).ready(function($){
 	.always(function(){
 		console.log("complete");
 	})
-	function mostrar (data){
+	function mostrar (data){ //Recorremos la parte "results" del objeto
 		data.results.forEach(function(pokeDatos){
+			var habilidades = pokeDatos.abilities; //array
+			var alto = pokeDatos.height;
+			var peso = pokeDatos.weight;
+			var nombre = pokeDatos.name;
+			var id = pokeDatos.id;
 			
 		})
 	}
