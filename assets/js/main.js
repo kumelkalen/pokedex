@@ -5,5 +5,14 @@ $(document).ready(function($){
 		dataType: 'JSON', // Definimos tipo de dato
 		data:{"limit": '10'}, // Lo limitamos a que se emuestren de 10;
 	})
-
+	.done(function(respuesta){
+		console.log("success");
+		console.log(respuesta);	
+	})
+	.fail(function(){
+		console.log("error");
+	})
+	.always(function(){
+		console.log("complete");
+	})
 });
