@@ -18,3 +18,10 @@ body{
 	color: #e84848;
 	padding: 50px;
 }
+.cont-poke{
+	padding: 0 100px;
+}
+img{
+	height: 150px;
+	width: 150px;
+}
