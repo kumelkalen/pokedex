@@ -7,7 +7,7 @@ $(document).ready(function($){
 	})
 	.done(function(respuesta){
 		console.log("success");
-		console.log(respuesta);	
+		mostrar(respuesta);	
 	})
 	.fail(function(){
 		console.log("error");
@@ -15,4 +15,9 @@ $(document).ready(function($){
 	.always(function(){
 		console.log("complete");
 	})
+	function mostrar (data){
+		data.results.forEach(function(pokeDatos){
+			
+		})
+	}
 });
